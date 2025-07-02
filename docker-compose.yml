@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: api-ellis
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container
